@@ -1,0 +1,11 @@
+//CHECKING IF THE YEAR IS A LEAP YEAR OR A NORMAL YEAR
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int year;
+    printf("Enter the year that you wish to check -> ");
+    scanf("%d",&year);
+    year%4==0 ? year%400==0 ? printf("THE YEAR %d IS A LEAP YEAR",year) : year%100==0 ? printf("THE YEAR %d IS NOT A LEAP YEAR",year) : printf("THE YEAR %d IS A LEAP YEAR",year) : printf("THE YEAR %d IS NOT A LEAP YEAR",year);
+    return 0;
+}

@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    float temp,val;
+    int dec;
+    label:
+    printf("Enter the temperature -> ");
+    scanf("%f",&temp);
+    printf("PRESS 1 TO CONVERT FROM celsius TO fahrenheit AND PRESS 2 TO CONVERT FROM fahrenheit to celsius -> ");
+    scanf("%d",&dec);
+    if(dec==1)
+        val = temp*(9.0/5.0)+32;
+    else if(dec==2)
+        val = (temp-32)*5.0/9.0;
+    else
+    {
+        printf("WRONG INPUT!!\n");
+        goto label;
+    }
+    printf("THE CONVERTED TEMPERATURE IS -> %.2f",val);
+    return 0;
+}

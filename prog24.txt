@@ -1,0 +1,16 @@
+//TO CHECK IF THE GIVEN CHARACTER IS AN ALPHABET CHARACTER OR not
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    char chr;
+    int asc;
+    printf("Enter the character to be checked is alphabet or not -> ");
+    scanf("%c",&chr);
+    asc = chr;
+    if((asc>=65 && asc<=90) || (asc>=97 && asc<=122))
+        printf("THE PROVIDED CHARACTER IS AN ALPHABET");
+    else
+        printf("THE PROVIDED CHARACTER IS NOT AN ALPHABET");
+    return 0;
+}

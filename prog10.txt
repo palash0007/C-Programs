@@ -1,0 +1,13 @@
+//FIND THE POWER TO A NUMBER
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    float base,power,val;
+    printf("Enter the base and the power -> ");
+    scanf("%f %f",&base,&power);
+    val = pow(base,power);
+    printf("THE RESULT IS -> %.2f",val);
+    return 0;
+}

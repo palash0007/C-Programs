@@ -1,0 +1,13 @@
+//AREA AND PERIMETER OF A RECTANGLE
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    float len,bre,area,per;
+    printf("Enter the length and breadth of the rectangle -> ");
+    scanf("%f %f",&len,&bre);
+    area = len*bre;
+    per = 2*(len+bre);
+    printf("THE AREA IS -> %.2f and THE PERIMETER IS -> %.2f",area,per);
+    return 0;
+}

@@ -1,0 +1,34 @@
+//SIMPLE CALCUATOR APPLICATION
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n1,n2,dec,res=0;
+    printf("Enter the 2 numbers -> ");
+    scanf("%d %d",&n1,&n2);
+    printf("Press 1 to add, 2 to subtract, 3 to multiply, 4 to divide, 5 to find the modulus -> ");
+    scanf("%d",&dec);
+    switch(dec)
+    {
+    case 1:
+        res = n1+n2;
+        break;
+    case 2:
+        res = n1-n2;
+        break;
+    case 3:
+        res = n1*n2;
+        break;
+    case 4:
+        res = n1/n2;
+        break;
+    case 5:
+        res = n1%n2;
+        break;
+    default:
+        printf("INVALID INPUT\n");
+        break;
+    }
+    printf("THE RESULT IS -> %d",res);
+    return 0;
+}

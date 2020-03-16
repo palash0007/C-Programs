@@ -1,0 +1,21 @@
+//TO FIND THE GREATEST OF THE 2 NUMBERS
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n1,n2;
+    int a;
+    printf("Enter the 2 numbers that you wish to compare -> ");
+    scanf("%d %d",&n1,&n2);
+    a=(n1>n2);
+    switch(a)
+    {
+    case 1:
+        printf("%d IS GREATER",n1);
+        break;
+    default:
+        printf("%d IS GREATER",n2);
+        break;
+    }
+    return 0;
+}

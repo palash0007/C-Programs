@@ -1,0 +1,11 @@
+//CHECKING IF THE PROVIDED NUMBER IS EVEN OR ODD
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n;
+    printf("Enter the number that you wish to check -> ");
+    scanf("%d",&n);
+    n%2==0?printf("THE NUMBER %d IS EVEN.",n):printf("THE NUMBER %d is ODD",n);
+    return 0;
+}

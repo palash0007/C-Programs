@@ -1,0 +1,14 @@
+//FIND THE SQUARE ROOT TO A NUMBER
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    float num,val;
+    printf("Enter the number whose square root you wish to find -> ");
+    scanf("%f",&num);
+    val = sqrt(num);
+    printf("THE SQUARE ROOT OF THE NUMBER %.2f IS -> %.4f",num,val);
+    return 0;
+}
+

@@ -1,0 +1,18 @@
+//TO CHECK IF THE PROVIDED ALPHABET IS UPPERCASE OR LOWERCASE
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    char chr;
+    int asc;
+    printf("Enter the character -> ");
+    scanf("%c",&chr);
+    asc=chr;
+    if(asc>=65 && asc<=90)
+        printf("THE PROVIDED ALPHABET IS AN UPPERCASE");
+    else if(asc>=97 && asc<=122)
+        printf("THE PROVIDED ALPHABET IS A LOWERCASE");
+    else
+        printf("THE PROVIDED CHARACTER IS NOT AN ALPHABET");
+    return 0;
+}

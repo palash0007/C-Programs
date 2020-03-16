@@ -1,0 +1,12 @@
+//FIND THE SIMPLE INTEREST
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    float p,r,t,si;
+    printf("Enter the principle, rate and time -> ");
+    scanf("%f %f %f",&p,&r,&t);
+    si = p*r*t/100.0;
+    printf("THE SIMPLE INTEREST IS -> %.2f",si);
+    return 0;
+}

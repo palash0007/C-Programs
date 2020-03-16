@@ -1,0 +1,17 @@
+//CALCULATING THE PROFIT PERCENTAGE AND LOSS PERCENTAGE TO A COMMODITY
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    float cp,sp,d,res;
+    printf("Enter the cost price and selling price -> ");
+    scanf("%f %f",&cp,&sp);
+    d=sp-cp;
+    res = (d/cp)*100.0;
+    if(d<0)
+        printf("LOSS = %.2f",fabs(res));
+    else
+        printf("PROFIT = %.2f",fabs(res));
+    return 0;
+}

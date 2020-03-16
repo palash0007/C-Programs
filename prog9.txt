@@ -1,0 +1,26 @@
+//CONVERTING DAYS TO YEARS, MONTHS, WEEKS AND DAYS
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int years=0,months=0,weeks=0,days=0;
+    printf("Enter the number of days -> ");
+    scanf("%d",&days);
+    if(days>=365)
+    {
+        years = days/365;
+        days = days-(years*365);
+    }
+    if(days>=30)
+    {
+        months = days/30;
+        days = days-(months*30);
+    }
+    if(days>=7)
+    {
+        weeks = days/7;
+        days = days-(weeks*7);
+    }
+    printf("YEARS = %d     MONTHS = %d     WEEKS = %d     DAYS = %d",years,months,weeks,days);
+    return 0;
+}

@@ -1,0 +1,12 @@
+//FINDING THE AREA OF THE TRIANGLE
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    float base,ht,area;
+    printf("Enter the base and height of the triangle -> ");
+    scanf("%f %f",&base,&ht);
+    area = 0.5*base*ht;
+    printf("THE AREA OF THE TRIANGLE IS -> %.2f",area);
+    return 0;
+}

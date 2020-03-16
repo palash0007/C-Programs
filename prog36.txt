@@ -1,0 +1,30 @@
+//CHECK IF THE PROVIDED NUMBER IS POSITIVE OR NEGATIVE
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n;
+    int cmp1,cmp2;
+    printf("Enter the number that you wish to check -> ");
+    scanf("%d",&n);
+    cmp1 = n>0;
+    cmp2 = n<0;
+    switch(cmp1)
+    {
+    case 1:
+        printf("THE PROVIDED NUMBER IS POSITIVE");
+        break;
+    case 0:
+        switch(cmp2)
+        {
+
+        case 1:
+            printf("THE PROVIDED NUMBER IS NEGATIVE");
+            break;
+        case 0:
+            printf("THE PROVIDED NUMBER IS ZERO");
+            break;
+        }
+    }
+    return 0;
+}

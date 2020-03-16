@@ -1,0 +1,14 @@
+//FINDING THE COMPOUND INTEREST
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main()
+{
+    float p,r,t,val,ci;
+    printf("Enter the principle, rate and time -> ");
+    scanf("%f %f %f",&p,&r,&t);
+    val = p*pow((1+r/100.0),t);
+    ci = val-p;
+    printf("THE COMPOUND INTEREST IS -> %.2f",ci);
+    return 0;
+}

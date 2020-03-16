@@ -1,0 +1,15 @@
+//FIND THE MAXIMUM OF 2 NUMBERS
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n1,n2,max;
+    printf("Enter the numbers that you wish to compare -> ");
+    scanf("%d %d",&n1,&n2);
+    if(n1>n2)
+        max=n1;
+    else
+        max=n2;
+    printf("%d IS GREATER",max);
+    return 0;
+}

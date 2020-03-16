@@ -1,0 +1,13 @@
+//TAKING INPUT FROM THE USER
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int n1;
+    float n2;
+    char ch;
+    printf("Enter the integer, float and character -> ");
+    scanf("%d %f %c",&n1,&n2,&ch);
+    printf("INTEGER -> %d     FLOAT -> %f    CHARACTER -> %c",n1,n2,ch);
+    return 0;
+}

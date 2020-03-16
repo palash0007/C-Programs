@@ -1,0 +1,23 @@
+//CHECK IF THE PROVIDED ALPHABET IS A VOWEL OR A CONSONANT
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    char chr;
+    int asc;
+    printf("Enter the character that you wish to check is a VOWEL or a CONSONANT -> ");
+    scanf("%c",&chr);
+    asc=chr;
+    if((asc>=65 && asc<=90) || (asc>=97 && asc<=122))
+    {
+        if(chr=='a' || chr=='e' || chr=='i' || chr=='o' || chr=='u' || chr=='A' || chr=='E' || chr=='I' || chr=='O' || chr=='U')
+            printf("THE PROVIDED ALPHABET IS A VOWEL.");
+        else
+            printf("THE PROVIDED ALPHABET IS A CONSONANT");
+    }
+    else
+     {
+        printf("THE CHARACTER IS NOT AN ALPHABET");
+      }
+    return 0;
+}

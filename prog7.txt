@@ -1,0 +1,15 @@
+//FINDING THE THIRD ANGlE OF THE TRIANGLE
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    float a1,a2,a3;
+    printf("Enter the 2 angles of the triangle -> ");
+    scanf("%f %f",&a1,&a2);
+    a3=180-(a1+a2);
+    if(a1>=180||a2>=180||a1+a2>=180||a1<=0||a2<=0)
+        printf("THE TRIANGLE IS NOT POSSIBLE.");
+    else
+        printf("THE THIRD ANGLE OF THE TRIANGLE IS -> %.2f",a3);
+    return 0;
+}
